@@ -1,0 +1,8 @@
+
+# hugo specific files
+.hugo_build.lock
+public/
+
+# generic
+.DS_Store
+
