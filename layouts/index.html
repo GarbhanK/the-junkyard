@@ -1,0 +1,24 @@
+{{ define "main" }}
+{{ .Content }}
+{{ $albums := where .Site.RegularPages "Section" "albums" }}
+{{ $albums = $albums.ByDate.Reverse }}
+{{ $latest := index $albums 0 }}
+
+{{ if $latest }}
+<h3>Week {{ $latest.Params.week }} pick...</h3>
+<div class="current-pick">
+    <img src="/the-junkyard/images/covers/{{ $latest.Params.cover }}" alt="{{ $latest.Title }}">
+    <div class="current-pick-info">
+        <p class="current-pick-title"><a href="{{ $latest.RelPermalink }}">{{ $latest.Title }}</a></p>
+        <p>{{ $latest.Params.release }}</p>
+        {{ if $latest.Params.chosenby }}
+            <p>Chosen by {{ $latest.Params.chosenby }}</p>
+        {{ end }}
+        {{ if $latest.Params.tags }}
+            <p>{{ range $latest.Params.tags }}<span class="tag">{{ . }}</span>{{ end }}</p>
+        {{ end }}
+    </div>
+</div>
+{{ end }}
+
+{{ end }}

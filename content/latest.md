@@ -1,0 +1,4 @@
++++
+title = "latest"
+layout = "latest"
++++

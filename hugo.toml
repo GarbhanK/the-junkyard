@@ -1,0 +1,25 @@
+baseURL = 'https://garbhank.github.io/the-junkyard/'
+author = "garbhan"
+languageCode = 'en-us'
+title = 'the junkyard'
+canonifyURLs = true
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  year = "years"
+
+[outputs]
+  home = ['html', 'rss']
+  section = ['html', 'rss']
+  taxonomy = ['html']
+  term = ['html']
+
+[services]
+  [services.rss]
+    limit = 10
+
+[params]
+  [params.author]
+    email = 'garbhan@icloud.com'
+    name = 'Garbhan Kenneally'

@@ -1,0 +1,41 @@
+<!--<a href="{{ "" | relURL }}" class="title">
+  <h2>{{ .Site.Title }}</h2>
+</a>
+<nav>{{- partial "nav.html" . -}}</nav>
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+<nav>
+    <div class="logo">
+        <a href="/"><img src="/assets/site_logo.JPG"></a>
+    </div>
+      <ul id="menulist">
+        <li><a href="about.html">about</a></li>
+        <li><a href="albums.html">albums</a></li>
+        <li><a href="members.html">members</a></li>
+        <li><a href="stats.html">stats</a></li>
+     </ul>
+     <div class="menu-icon">
+         <img src="/assets/icons/menu_icon.png" onclick="toggleMenu()">
+     </div>
+
+     <script>
+        let menulist = document.getElementById("menulist")
+        menulist.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menulist.style.maxHeight == "0px")
+            {
+                menulist.style.maxHeight = "360px";
+            }
+            else{
+                menulist.style.maxHeight = "0px";
+            }
+        }
+     </script>
+
+</nav>
