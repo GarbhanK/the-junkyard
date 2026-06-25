@@ -7,7 +7,7 @@
 {{ if $latest }}
 <h3>Week {{ $latest.Params.week }} pick...</h3>
 <div class="current-pick">
-    <img src="/the-junkyard/images/covers/{{ $latest.Params.cover }}" alt="{{ $latest.Title }}">
+    <img src="{{ printf "images/covers/%s" $latest.Params.cover | relURL }}" alt="{{ $latest.Title }}">
     <div class="current-pick-info">
         <p class="current-pick-title"><a href="{{ $latest.RelPermalink }}">{{ $latest.Title }}</a></p>
         <p>{{ $latest.Params.release }}</p>
