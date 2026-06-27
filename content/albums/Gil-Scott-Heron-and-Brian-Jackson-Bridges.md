@@ -20,4 +20,4 @@ tags = [
 ]
 +++
 
-![](../../images/covers/missing.jpg)
+![](../../images/covers/Gil-Scott-Heron-and-Brian-Jackson-Bridges.jpg)

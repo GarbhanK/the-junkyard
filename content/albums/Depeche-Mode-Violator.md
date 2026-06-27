@@ -17,6 +17,4 @@ tags = [
 ]
 +++
 
-
 ![](../../images/covers/depeche-mode-violator.jpg)
-
