@@ -8,6 +8,8 @@ repo for holding the Hugo site generator
 
 album covers from: https://bendodson.com/projects/itunes-artwork-finder/index.html
 
+week reference: http://www.whatweekisit.org/
+
 ## TODOs
 - [ ] make members page layout where we can rank albums we've listened to
 - [ ] add a standard link to RYM on all pages?
