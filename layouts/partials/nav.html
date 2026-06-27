@@ -2,9 +2,8 @@
     <!--<div class="logo">
         <a href="/"><img src="/the-junkyard/images/imagetoolarge.jpg"></a>
     </div>-->
-      <ul id="menulist">
+      <ul>
         <li><a href="/">home</a></li>
-        <li><a href={{ "about" | relURL }}>about</a></li>
         <li><a href={{ "albums" | relURL }}>albums</a></li>
         <li><a href={{ "members" | relURL }}>members</a></li>
         <li><a href={{ "stats" | relURL }}>stats</a></li>
@@ -12,20 +11,4 @@
      <div class="menu-icon">
          <img src="/assets/icons/menu_icon.png" onclick="toggleMenu()">
      </div>
-
-     <script>
-        let menulist = document.getElementById("menulist")
-        menulist.style.maxHeight = "0px";
-
-        function toggleMenu(){
-            if(menulist.style.maxHeight == "0px")
-            {
-                menulist.style.maxHeight = "360px";
-            }
-            else{
-                menulist.style.maxHeight = "0px";
-            }
-        }
-     </script>
-
 </nav>

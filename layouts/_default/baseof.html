@@ -9,11 +9,6 @@
   <title>{{- block "title" . }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{- end }}</title>
 
   {{- partial "seo_tags.html" . -}}
-  <meta name="referrer" content="no-referrer-when-downgrade" />
-
-  {{ with .OutputFormats.Get "rss" -}}
-  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-  {{ end -}}
 
   {{- partial "style.html" . -}}
 
@@ -24,7 +19,6 @@
   <link rel="icon" type="image/x-icon" href="{{ .Site.BaseURL }}images/favicon.ico">
 </head>
 
-<!--<body background="{{ .Site.BaseURL }}images/gridpattern_bg.jpg">-->
 <body background="{{ .Site.BaseURL }}images/bg.png">
   <div id="sitecanvas">
 
@@ -33,11 +27,9 @@
   </header>
 
   <main>
-      <!--<div class="pagecanvas">-->
-          <div class="content-box">
-              {{- block "main" . }}{{- end }}
-          </div>
-      <!--</div>-->
+      <div class="content-box">
+          {{- block "main" . }}{{- end }}
+      </div>
   </main>
 
   <footer>
