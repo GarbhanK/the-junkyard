@@ -1,5 +1,5 @@
 +++
-title = "Roger Doyle Operating Theatre the Early Years Vol 2"
+title = "Roger Doyle - Operating Theatre the Early Years Vol 2"
 date = "2026-03-30T21:11:40+01:00"
 draft = false
 week = 14

@@ -33,21 +33,22 @@
         color: rgb(139, 90, 237);
     }
 
-    nav{
-        padding:10px 40px 10px 30px;
+    nav {
+        padding: 10px 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        /*background: #30232a;*/
-        position: relative;
-        height:70px ;
-        font-size: 20px;
+        flex-wrap: wrap;
+        height: auto;
+        font-size: 18px;
         font-weight: 700;
     }
-    nav ul{
+    nav ul {
         display: flex;
-        gap:50px ;
+        flex-wrap: wrap;
+        gap: 16px 30px;
         align-items: center;
+        padding: 0;
     }
     nav ul li{
         list-style-type:none ;
@@ -68,6 +69,10 @@
     h3{
         /*color: rgb(96, 52, 185);*/
         color: var(--accent-purple);
+    }
+
+    img {
+        max-width: 100%;
     }
 
     .menu-icon{
@@ -254,6 +259,12 @@
     }
     .album-table tr:hover {
         background-color: #f0edf8;
+    }
+
+    .single-album-cover {
+        max-width: 250px;
+        display: block;
+        margin-bottom: 12px;
     }
 
 </style>
