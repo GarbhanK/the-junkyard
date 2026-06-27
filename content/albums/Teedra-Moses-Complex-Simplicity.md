@@ -1,6 +1,6 @@
 +++
 title = "Teedra Moses - Complex Simplicity"
-date = "2026-01-06T22:43:59Z"
+date = "2026-03-02T00:00:00Z"
 draft = false
 week = 10
 chosenby = "niamh"

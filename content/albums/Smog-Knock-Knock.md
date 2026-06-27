@@ -1,6 +1,6 @@
 +++
 title = "Smog - Knock Knock"
-date = "2026-04-15T21:04:13+01:00"
+date = "2026-04-13T00:00:00Z"
 draft = false
 week = 16
 chosenby = "garbhan"

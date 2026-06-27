@@ -1,6 +1,6 @@
 baseURL = 'https://garbhank.github.io/the-junkyard/'
 author = "garbhan"
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'the junkyard'
 canonifyURLs = true
 

@@ -1,6 +1,6 @@
 +++
 title = "Betty Davis - Betty Davis"
-date = "2026-02-17T16:15:20Z"
+date = "2026-02-16T00:00:00Z"
 draft = false
 week = 8
 chosenby = "niamh"
@@ -17,6 +17,5 @@ tags = [
     "psychedelic soul",
 ]
 +++
-
 
 ![](../../images/covers/betty-davis-betty-davis.jpg)

@@ -1,6 +1,6 @@
 +++
 title = "Otto Benson - Peanut"
-date = "2026-01-06T22:39:14Z"
+date = "2026-01-01T00:00:00Z"
 draft = false
 week = 1
 chosenby = "garbhan"
@@ -20,4 +20,3 @@ tags = [
 +++
 
 ![](../../images/covers/otto-benson-peanut.jpg)
-

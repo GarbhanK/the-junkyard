@@ -1,6 +1,6 @@
 +++
 title = "Stevie Wonder - Talking Book"
-date = "2026-01-06T22:43:59Z"
+date = "2026-02-02T00:00:00Z"
 draft = false
 week = 6
 chosenby = "garbhan"

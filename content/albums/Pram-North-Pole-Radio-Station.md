@@ -1,8 +1,8 @@
 +++
 title = "Pram - North Pole Radio Station"
-date = "2026-05-02T20:16:24+01:00"
+date = "2026-04-20T00:00:00Z"
 draft = false
-week = 16
+week = 17
 chosenby = "niamh"
 genre = "neo-psychedelia"
 origin = "england"
@@ -24,4 +24,3 @@ tags = [
 +++
 
 ![](../../images/covers/pram-north-pole-radio-station.jpg)
-

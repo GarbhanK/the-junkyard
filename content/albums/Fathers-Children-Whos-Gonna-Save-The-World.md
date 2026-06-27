@@ -1,6 +1,5 @@
 +++
 title = "Father's Children - Who's Gonna Save The World"
-# date = "2026-01-12T22:39:14Z"
 date = "2026-01-12T00:00:00Z"
 draft = false
 week = 3
