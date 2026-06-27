@@ -1,13 +1,13 @@
 +++
 title = "Gil Scott-Heron & Brian Jackson - Bridges"
-date = "2026-01-06T22:39:14Z"
+date = "2026-01-19T22:39:14Z"
 draft = false
 week = 4
 chosenby = "niamh"
 genre = "soul"
 origin = "usa"
 release = 1977
-cover = ""
+cover = "gil-scott-heron-and-brian-jackson-bridges.jpg"
 rym = "https://rateyourmusic.com/release/album/gil-scott-heron-and-brian-jackson/bridges/"
 years = ["1977"]
 tags = [
@@ -20,4 +20,4 @@ tags = [
 ]
 +++
 
-![](../../images/covers/Gil-Scott-Heron-and-Brian-Jackson-Bridges.jpg)
+![](../../images/covers/gil-scott-heron-and-brian-jackson-bridges.jpg)
