@@ -1,7 +1,11 @@
+{{ define "main" }}
+
 {{- partial "style.html" . -}}
 
 {{ range sort (where .Site.RegularPages "Section" "albums") "Params.week" "desc" | first 1 }}
   {{ $coverFile := printf "/images/covers/%s" .Params.Cover }}
   <img src="{{ $coverFile | relURL }}" alt="album of the week" width="200" height="200">
   <h3>{{ .Title }}</h3>
+{{ end }}
+
 {{ end }}
