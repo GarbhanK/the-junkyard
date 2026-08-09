@@ -8,18 +8,18 @@ genre = "neo-psychedelia"
 origin = "england"
 release = 1998
 cover = "pram-north-pole-radio-station.jpg"
-rym = ""
+rym = "https://rateyourmusic.com/release/album/pram/north-pole-radio-station/"
 years = ["1998"]
 tags = [
     "neo-psychedelia",
     "ambient pop",
-    "Space Age Pop",
-    "Cocktail Nation",
-    "Indietronica",
-    "Art Pop",
-    "Hauntology",
-    "Experimental Rock",
-    "Toypop"
+    "space age pop",
+    "cocktail nation",
+    "indietronica",
+    "art pop",
+    "hauntology",
+    "experimental rock",
+    "toypop"
 ]
 +++
 
