@@ -11,7 +11,7 @@ cover = "tim-buckley-starsailor.jpg"
 rym = "https://rateyourmusic.com/release/album/tim-buckley/starsailor/"
 years = ["1970"]
 tags = [
-    "experimenal rock",
+    "experimental rock",
     "avant-folk",
     "singer-songwriter",
     "avant-garde jazz",

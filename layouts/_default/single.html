@@ -1,23 +1,26 @@
 {{ define "main" }}
-{{ if eq .Type "albums" }}{{ if not .Params.menu }}
-<style> body { background-color: #d7deed; } </style>
-<h1>{{ .Title }}</h1>
-<p>
-  <i>
-    <time datetime='{{ .Date.Format "2006-01-02" }}'>
-      {{ .Date.Format (default "02 Jan, 2006" .Site.Params.dateFormat) }}
-    </time>
-  </i>
-</p>
+    {{ if eq .Type "albums" }}{{ if not .Params.menu }}
+    <style> body { background-color: #d7deed; } </style>
+    <h1>{{ .Title }}</h1>
+    <p>
+      <i>
+        <time datetime='{{ .Date.Format "2006-01-02" }}'>
+          {{ .Date.Format (default "02 Jan, 2006" .Site.Params.dateFormat) }}
+        </time>
+      </i>
+    </p>
+    {{ end }}
+    {{ with .Params.rym }}<p><a href="{{ . }}">more info</a></p>{{ end }}
 {{ end }}
-<p><a href="{{ .Params.rym }}">more info</a></p>
-{{ end }}
+
 <content>
   {{ .Content }}
 </content>
+
 <p>
   {{ range (.GetTerms "tags") }}
   <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
   {{ end }}
 </p>
+
 {{ end }}
