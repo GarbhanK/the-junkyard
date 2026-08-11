@@ -23,6 +23,35 @@
   {{ end }}
 </table>
 
+<!-- Top Years per Album -->
+<h2>top years</h2>
+<table class="album-table">
+    <tr class="album-table">
+        <td>Year</td>
+        <td>Count</td>
+    </tr>
+    {{ $years := slice }}
+    {{ range $albums }}
+      {{ $years = $years | append .Params.release }}
+    {{ end }}
+    {{ $uniqueYears := $years | uniq | sort }}
+
+    {{ $yearCounts := slice }}
+    {{ range $uniqueYears }}
+      {{ $count := where $albums "Params.release" . | len }}
+      {{ $yearCounts = $yearCounts | append (dict "year" . "count" $count ) }}
+    {{ end }}
+    {{ $yearCounts = sort $yearCounts "count" "desc" }}
+    {{ $topYears := first 10 $yearCounts }}
+
+    {{ range $topYears }}
+      <tr>
+          <td>{{ .year }}</td>
+          <td>{{ .count }}</td>
+      </tr>
+    {{ end }}
+</table>
+
 <!-- Albums per Genre -->
 <h2>top genres</h2>
 <table class="album-table">
@@ -31,16 +60,24 @@
     <td>Genre</td>
     <td>Count</td>
   </tr>
-  {{ $genres := slice }}
+  {{ $genres := slice }} <!-- create a slice for genre strings -->
+
   {{ range $albums }}
     {{ $genres = $genres | append .Params.genre }}
   {{ end }}
+
   {{ $uniqueGenres := $genres | uniq | sort }}
+  {{ $genreCounts := slice }}
   {{ range $uniqueGenres }}
     {{ $count := where $albums "Params.genre" . | len }}
+    {{ $genreCounts = $genreCounts | append (dict "name" . "count" $count ) }}
+  {{ end }}
+
+  {{ $genreCounts = sort $genreCounts "count" "desc" }}
+  {{ range $genreCounts }}
     <tr>
-      <td>{{ . }}</td>
-      <td>{{ $count }}</td>
+      <td>{{ .name }}</td>
+      <td>{{ .count }}</td>
     </tr>
   {{ end }}
 </table>
@@ -71,7 +108,7 @@
 <table class="album-table">
   <!-- <tr style="background-color: yellow;color: black;"> -->
   <tr class="table-header">
-    <td>Genre</td>
+    <td>Tag</td>
     <td>Count</td>
   </tr>
 
@@ -86,12 +123,20 @@
   <!-- Deduplicate and sort -->
   {{ $uniqueTags := $allTags | uniq | sort }}
 
+  <!-- Define slice for tagCounts -->
+  {{ $tagCounts := slice }}
+
   <!-- Count albums per tag -->
   {{ range $uniqueTags }}
     {{ $count := where $albums "Params.tags" "intersect" (slice .) | len }}
+    {{ $tagCounts = $tagCounts | append (dict "name" . "count" $count) }}
+  {{ end }}
+  {{ $tagCounts = sort $tagCounts "count" "desc" }}
+
+  {{ range $tagCounts }}
     <tr>
-      <td>{{ . }}</td>
-      <td>{{ $count }}</td>
+      <td>{{ .name }}</td>
+      <td>{{ .count }}</td>
     </tr>
   {{ end }}
 </table>
