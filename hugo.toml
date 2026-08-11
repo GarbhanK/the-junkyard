@@ -20,6 +20,7 @@ canonifyURLs = true
     limit = 10
 
 [params]
+  favicon = "images/favicon.ico"
   [params.author]
     email = 'garbhan@icloud.com'
     name = 'Garbhan Kenneally'

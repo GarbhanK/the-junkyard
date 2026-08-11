@@ -1,6 +1,5 @@
 {{ with .Site.Params.favicon }}
 
-<link rel="icon" type="image/x-icon" href="{{ .Site.BaseURL }}images/favicon.ico">
+<link rel="icon" type="image/x-icon" href="{{ . | absURL }}">
 
 {{ end }}
-
