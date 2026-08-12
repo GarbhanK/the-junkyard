@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+{{ .Content }}
+
+<!-- create a slice to hold all names -->
+{{ $allMembers := slice }}
+
+{{ range (where .Site.RegularPages "Section" "albums") }}
+    {{ if .Params.chosenby }}
+        {{ $allMembers = $allMembers | append .Params.chosenby }}
+    {{ end }}
+{{ end }}
+
+<!-- filter the array for unique member names -->
+{{ $uniqueMembers := $allMembers | uniq }}
+
+<table class="album-table">
+    <tr class="table-header">
+        <td>name</td>
+    </tr>
+    {{ range $uniqueMembers }}
+    <tr>
+        <td>{{ . }}</td>
+    </tr>
+    {{ end }}
+</table>
+
+{{ end }}
